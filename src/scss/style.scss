@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+}
+nav{
+    width: 100%;
+}
+
+@font-face {
+    font-family: 'primer-fuente';
+    src: url('./fuentes/Quicksilver.ttf');
+    font-display: swap;
+}
+
+:root{
+    --tamaño-general: 26px;
+    --font: 'Cabin';
+    --color-principal: black;
+}
+ .box{
+    border-radius: 6px;
+    height: 100px;
+    width: 300px;
+    margin:  60px auto;
+        }
+ .box1 {
+     background-color: rgb(94, 30, 80);
+     transition: all 2s;
+    }        
+.box:hover {
+    transform: scale(2);
+    }
+
+.imagen-centro {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.animaciones{
+    width:400px ;
+    height: 50px;
+    margin: 50px;
+    background-color: darkslateblue;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.animaciones:hover{
+    animation: change-color 4s;
+}
+/*fotogramas de la animacion . Regla "@"*/
+
+@keyframes change-color{
+    0% {
+        background-color: darkmagenta;}
+    15%{
+        border-radius: 50%;}
+    25% {
+        width: 900px;}
+    50% {
+        background-color: darkred;}
+    100% {
+        background-color: darkslateblue;}
+    }
+
+.menu-container {
+    color:#fff;
+    background-color: rgb(177, 176, 241);
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.section-container{
+    color:cornflowerblue;
+    display: flex;
+    justify-content: center;
+}
+.section {
+    background-color:rgb(247, 232, 232);
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content:space-between;
+    padding: 40px;
+    color: rgb(10, 10, 10) ; 
+    text-decoration:underline ;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'primer-fuente';
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border: 10px solid cornflowerblue;
+}
+
+.imagen {
+    height: 90px; 
+    display: flex;
+    justify-content:end;
+    padding: 2px;
+}
+.bg-maxi{  
+     background-color: rgb(100 110 253 / 44%);
+    }
+    .bg-maxi2 {
+        color: #fff ;
+        background-color: rgb(105, 116, 12);
+    }
+
+button {
+    text-align: left;
+}
+h3{
+    color: black;
+    text-decoration:underline;
+    text-align: center;
+    font-size: 45px;
+    font-family: 'primer-fuente'
+}
+h1, h2 {
+    color: rgb(105, 116, 12) ; 
+    text-decoration:underline ;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'primer-fuente';
+    height: 130px;
+    text-shadow: 2px -1px 1px #fff;
+}
+
+h4{
+    color: #fff;
+    font-size: var(--tamaño-general);
+    text-align: center;
+    font-family: var(--font)
+}
+
+h5 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+a { 
+    padding: 10px ;
+    color: var(--color-principal);
+    font-size: 20px;   
+    font-family: var(--font); 
+}
+#parrafo1 {color:#fff ; 
+   font-size: 35px;
+    text-align: center;
+    font-family: 'Ephesis';
+    padding: 40px ;
+}
+
+p {  color: #fff;
+    font-size: var(--tamaño-general);   
+    font-family: var(--font);
+    padding: 50px;
+}
+ul,li {
+    list-style: none;
+    list-style-type: none;
+}
+
+.oluno{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 40px 40px 40px;
+    text-align: center;
+    white-space: pre-line;
+}
+
+.responsiveContent {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.2%;
+    margin-bottom: 20px;
+    left: 15%;
+  }
+
+.responsiveContent iframe {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 70%;
+    height: 70%;
+  }
+
+/* ul,li {
+    display: flex;
+    justify-content: center;
+    font-family: 'Ephesis';
+    font-size: 20px;   
+    font-family: var(--font);
+    color: white;
+} */
+
+ul li a:hover{
+    background-color: violet;
+    color: rgb(14, 11, 11);
+    padding: 0px;
+    margin: 5px;
+}
+
+.fooster{
+    color: rgb(255, 255, 255);
+    margin: 20px auto;
+    display: flex;
+    text-align: center;
+}
+
+.audio {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+   
+body{
+    background-image: url('../multimedias/imagenes/Fondo.jpg');
+    background-repeat: no-repeat;
+    background-color: black;
+}
+.img
+{
+    width:100%;
+    
+}
+/*ANIDACION*/
+
+@import './base/listas';
+@import './base/variables';
+@import './base/colores';
+@import './vistas/biografia';
+@import './componentes/footer';
+@import './componentes/header';
+@import './base/extends';
+@import './vistas/contactanos';
+
+/* listas importadas*/
+
+

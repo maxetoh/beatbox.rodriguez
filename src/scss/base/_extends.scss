@@ -1,0 +1,39 @@
+/*extends*/
+/*placeholder*/
+
+%mensaje {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 4px;
+}
+%flex{
+    display: flex;
+    justify-content: center;
+}
+.registrate{ 
+    background-color: red;
+    display: flex;
+    margin: 20px auto;
+    border: 4px #fff solid;
+    border-radius: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    @extend %mensaje;
+}
+
+.estas-preparado {
+    background-color: green;
+    display: flex;
+    margin: 40px auto;
+    border: 4px #fff solid;
+    border-radius: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    @extend %mensaje;
+    @extend %flex;
+}
+.diseable{
+    background-color: blue;
+    @extend %mensaje;
+    @extend %flex
+}

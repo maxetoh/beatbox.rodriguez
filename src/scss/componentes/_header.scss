@@ -1,0 +1,41 @@
+.bg-maxi {
+    color: #fff;
+    background-color: rgba(100, 110, 253, 0.44);
+    .bg-maxi2{
+        background-color: #69740c;
+        .bg-maxi4{
+            .bg-maxi3{
+                display: flex;
+                justify-content: flex-start;
+                font-family: "Ephesis";
+                font-size: 20px;
+                font-family: var(--font);
+                color:#fff
+            }
+        }
+    }
+}
+
+.container-fluid{
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-toggler{
+    background-color: #fff;
+    box-shadow: 1px -1px 2px 2px #000;
+    margin: 20px;
+}
+
+.navbar-nav{
+    display: flex;
+    align-items: center;
+}
+
+#lia1, #lia2, #lia3, #lia4{
+    color: #fff;
+}
+
+a {
+    width: max-content;
+}

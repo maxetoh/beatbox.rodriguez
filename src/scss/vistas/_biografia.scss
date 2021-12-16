@@ -1,0 +1,53 @@
+#list-item-1,#list-item-2,#list-item-3,#list-item-4{
+    color: $violeta;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 30px;
+    font-family:'Lucida Sans';
+    height: 80px;
+    padding: 20px;
+}
+#header-bio{
+    width: 100%;
+}
+#nav-bio{
+    width: 100%;
+}
+#list-example, #a1, #a2, #a3, #a4 {
+    width: 100%;
+}
+
+.big-box{
+    padding: 100px;
+}
+.parrafos{
+    width: 100%;
+    color: $blanco;
+    padding: 30px;
+}
+.uluno{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    padding: 30px;
+    font-size: 25px;
+}
+.lista-ganadores{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    padding: 30px;
+    font-size: 25px;
+    align-items: center;
+    text-align: center;
+    background-color: rgba($color: #fff, $alpha: 0.2);
+    border: #fff 2px solid;
+    box-shadow: 1px 1px 20px 10px #fff;
+}
+
+
+
+
+
